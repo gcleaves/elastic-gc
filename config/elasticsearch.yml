@@ -1,5 +1,5 @@
 cluster.name: docker 
-network.publish_host: 255.255.255.255  
+network.publish_host: ${DOCKER_HOST_IP}
 # http://www.markbetz.net/2014/03/18/elasticsearch-discovery-in-ec2/ 
 #node.master: true
 #node.data: true
