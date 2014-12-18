@@ -1,16 +1,14 @@
 cluster.name: docker 
 network.publish_host: ${DOCKER_HOST_IP}
 # http://www.markbetz.net/2014/03/18/elasticsearch-discovery-in-ec2/ 
-#node.master: true
-#node.data: true
-#discovery.zen.ping.multicast.enabled: false
-#discovery.zen.ping.unicast.hosts: ["10.240.34.61:9300"] 
 path:
   logs: /data/log
   data: /data/data
+  # The plugin DIR can't be in the data volume for plugins added in Dockerfile to work.
   plugins: /elasticsearch/plugins 
   
-http.cors.enabled: true  
+http.cors.enabled: true
+# The following settings should be replaced with an ENV variables but too lazy at moment
 http.cors.allow-origin: "http://130.211.106.238"
 
 cloud:
