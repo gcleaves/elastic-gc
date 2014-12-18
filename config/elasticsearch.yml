@@ -1,4 +1,4 @@
-cluster.name: docker 
+cluster.name: elasticsearch 
 network.publish_host: ${DOCKER_HOST_IP}
 # http://www.markbetz.net/2014/03/18/elasticsearch-discovery-in-ec2/ 
 path:
