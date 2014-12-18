@@ -1,1 +1,3 @@
-Elasticsearch docker that works with multicast discovery (or is it unicast) on the Google Cloud platform.
+Elasticsearch docker that works with multicast discovery on the Google Cloud platform.
+
+It works for me.
