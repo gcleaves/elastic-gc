@@ -1,4 +1,4 @@
-Elasticsearch docker that works with multicast discovery on the Google Cloud platform.  Be sure to edit config/elasticsearch.yml accordingly before building Dockerfile.  I don't think the udp networking port export is necessary.  Set the HEAP_SIZE according to your environment.  This Docker run command executes in the foreground so as to see logs.  Should run with -d option.
+Elasticsearch docker that works with multicast discovery on the Google Cloud platform. Be sure to edit config/elasticsearch.yml accordingly before building Dockerfile. Set the HEAP_SIZE according to your environment. This Docker run command executes in the foreground so as to see logs. Should run with -d option.
 
 It works for me.
 
